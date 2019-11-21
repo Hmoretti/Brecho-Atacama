@@ -15,7 +15,7 @@ def mostar_home(request):
     context = {
         'roupas': lista_roupas,
         'nome': nome,
-        'idade': idade
+        'idade': idade,
     }    
 
     
