@@ -1,22 +1,16 @@
+{% extends 'base.html'  %}
+
+
 {% load static  %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-    <script src="{% static 'script.js'%}"></script>
-    <title>Ola Mundo</title>
-    
-</head>
-<body>
+
+{% block content %}
+
     <h1>Alugue roupas</h1>
     <h2>Ola {{nome}}  </h2>
     <h3>idade: {{idade}} </h3>
     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eius perspiciatis blanditiis corrupti nisi nam praesentium dignissimos, aliquam delectus impedit quaerat molestiae ea sint libero dolores repudiandae, consequuntur, adipisci pariatur.</P>
 
     <img src="https://www.qualitylav.com.br/wp-content/uploads/2018/10/20180925_Moda-Cada-Roupa-em-seu-cabide.jpg" alt="">
-</body>
-</html>
+
+    {% endblock  %}

@@ -1,6 +1,7 @@
 body{
     background-color: black;
     color: white;
+    margin: 0;
 }
 
 img{
@@ -11,7 +12,7 @@ nav{
     background-color: antiquewhite;
     display: flex;
     height: 80px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 nav a{
