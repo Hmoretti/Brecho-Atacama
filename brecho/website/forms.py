@@ -6,8 +6,8 @@ class PedidoForm(forms.ModelForm):
         model =  Pedido
         fields = [
             'nome',
-            'emai',
-            'cartoa',
+            'email',
+            'cartao',
             'pagamento'
         ]
     

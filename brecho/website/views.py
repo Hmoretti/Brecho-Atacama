@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from website.forms import PedidoForm
 
 # Create your views here.
 def mostar_home(request):
@@ -20,3 +21,11 @@ def mostar_home(request):
 
     
     return render(request,'index.html', context)
+
+def cadastro_pedido(request):
+    
+    form = PedidoForm()
+    context = {
+        'formulario': form
+    }
+    return render (request, 'pedido.html', context)
